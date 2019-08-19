@@ -1,0 +1,2 @@
+Eureka Two peer配置示例
+主节点配置参考demo-eureka01
