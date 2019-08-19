@@ -1,0 +1,19 @@
+#  Two Peer Aware Eureka Servers
+server:
+  port: 9762
+
+spring:
+  profiles:
+    active: peer2
+
+
+eureka:
+  instance:
+    hostname: peer2
+#    通过主机名解析 不走ip解析
+    prefer-ip-address: false
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://peer1:9761/eureka/

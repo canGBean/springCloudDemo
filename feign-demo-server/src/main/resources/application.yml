@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: HelloServer
+
+server:
+#  port: 9111
+  port: 9112
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9761/eureka/
+#      defaultZone: http://peer1:9761/eureka/,http://peer2:9762/eureka/
+

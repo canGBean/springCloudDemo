@@ -1,0 +1,26 @@
+spring:
+  application:
+#    name: HelloClient1
+    name: HelloClient
+
+server:
+#  port: 9211
+  port: 9212
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9761/eureka
+#       defaultZone: http://peer1:9761/eureka/,http://peer2:9762/eureka/
+
+#open hystrix support
+feign:
+   hystrix:
+     enabled: true
+
+# hystrix dashboard stream
+management:
+  endpoints:
+    web:
+      exposure:
+         include: hystrix.stream
