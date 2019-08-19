@@ -2,7 +2,10 @@
 
 修改注释后可以单独运行Standalone Mode
 
-分别修application.yml的peer1 peer2配置后,打成jar包分别运行（Two Peer Aware Eureka Servers）
+分别修application.yml的peer1 peer2配置后,打成jar包分别运行
+
+Peer Two代码本例中为eureka0
+（Two Peer Aware Eureka Servers）
 
 
 ## Standalone Mode
