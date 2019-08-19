@@ -1,40 +1,40 @@
-server:
-  port: 9761
+#server:
+#  port: 9761
+#
+#
+#spring:
+#  freemarker:
+#    template-loader-path: classpath:/templates/
+#    prefer-file-system-access: false
 
-
-spring:
-  freemarker:
-    template-loader-path: classpath:/templates/
-    prefer-file-system-access: false
-
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#eureka:
+#  instance:
+#    hostname: localhost
+#  client:
+#    registerWithEureka: false
+#    fetchRegistry: false
+#    serviceUrl:
+#      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
 
 
 #  Two Peer Aware Eureka Servers begin
-#server:
-#  port: 9761
+server:
+  port: 9761
+
+spring:
+  profiles:
+    active: peer1
 #
-#spring:
-#  profiles:
-#    active: peer1
 #
-#
-#eureka:
-#  instance:
-#    hostname: peer1
-##    通过主机名解析 不走ip解析
-#    prefer-ip-address: false
-#  client:
-#    registerWithEureka: true
-#    fetchRegistry: false
-#    serviceUrl:
-#      defaultZone: http://peer2:9762/eureka/
+eureka:
+  instance:
+    hostname: peer1
+#    通过主机名解析 不走ip解析
+    prefer-ip-address: false
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://peer2:9762/eureka/
 #  Two Peer Aware Eureka Servers END
