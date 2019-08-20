@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/***
+ * ribbon client 带有熔断 测试
+ */
 @RestController
 @Slf4j
 @RequestMapping("/")

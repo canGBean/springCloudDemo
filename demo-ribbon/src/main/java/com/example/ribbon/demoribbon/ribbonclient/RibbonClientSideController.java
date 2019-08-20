@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+
+/**
+ * Ribbon client 测试
+ */
 @RestController
 @Slf4j
 @RequestMapping("/")
