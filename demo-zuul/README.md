@@ -11,3 +11,9 @@ zuul:
       path: /myperson/**
       serviceId: HelloClient
 ```
+
+com.example.zuul.demozuul.filter.CsrfFilter
+>用来测试自定义的Filter
+
+com.example.zuul.demozuul.provider.MyFallbackProvider
+>用来测试自定义的熔断
