@@ -1,6 +1,4 @@
-# 工程简介
-
-
-
-# 延伸阅读
-
+# SpringCloudAlibaba例子
+主要demo来源与阿里云知行动手实验室上的demo
+## provider和client
+provider和client包中的例子为“SpringCloudAlibaba体验-微服务开发入门教学”的demo,主要是服务提供者和消费者的基础调用
