@@ -35,5 +35,5 @@ nacos-config-sample是“通过 Nacos Config 实现分布式配置”的例子�
 #### nacos-discovery-provider-sample和nacos-discovery-consumer-sample
 这两个包里的demo主要是“使用 Nacos Discovery 进行服务注册/发现”的例子，介绍服务提供者和消费者的基础调用，内容和“provider和client”里的差不多
 
-## dubbo-providerr-sample和dubbo-consumer-sample
-r-sample和dubbo-consumer-sample包中的例子为"Spring Cloud Alibaba Sentinel 服务限流/熔断实战"和"分布式调用"的demo,主要是sentinel和dubbo的基本配置和使用.
+####  dubbo-providerr-sample和dubbo-consumer-sample
+dubbo-providerr-sample和dubbo-consumer-sample包中的例子为"Spring Cloud Alibaba Sentinel 服务限流/熔断实战"和"分布式调用"的demo,主要是sentinel和dubbo的基本配置和使用.
